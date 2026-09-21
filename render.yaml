@@ -17,11 +17,9 @@ services:
       - key: ENVIRONMENT
         value: production
       - key: ALLOWED_ORIGINS
-        sync: false
-        # REQUIRED: Set this to your Vercel frontend URL before deploying.
-        # Example: https://your-app.vercel.app (or comma-separated URLs including custom domain)
-        # In production, if unset or empty, all cross-origin requests are blocked for security.
-        # Set via Render dashboard: Environment → ALLOWED_ORIGINS → <your Vercel URL>
+        value: "https://frontend-cyan-mu-38.vercel.app,https://frontend-5khflfdss-surajearlybird-8597s-projects.vercel.app"
+      - key: FRONTEND_URL
+        value: "https://frontend-cyan-mu-38.vercel.app"
       - key: GEMINI_API_KEY
         value: ""
       - key: PYTHON_VERSION
