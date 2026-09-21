@@ -1,0 +1,31 @@
+# Ignore virtual environments
+venv/
+backend/venv/
+.venv/
+env/
+
+# Ignore node modules and build artifacts
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local database backups and files
+*.db
+*.db.old*
+
+# Backend and serverless files (backend is hosted on Render)
+api/
+backend/
+ml/
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
